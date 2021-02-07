@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Html Form Example</title>
+</head>
+<body>
+	<h1>HTML Form Example</h1>
+	<hr>
+	<br>
+	<!-- HTML form -->
+	<!-- GET vs POST -->
+	<form action="/submit.php" target="_self" method="POST">
+		
+		<!-- Input Text Field -->
+		<label for="fname">First Name</label>
+		<input type="text" name="fname" id="fname">
+
+		<br>
+
+		<label for="lname">Last Name</label>
+		<input type="text" name="lname" id="lname">
+
+		<br>
+
+		<!-- Dropdown/Select -->
+		<label for="age">Age Range</label>
+		<select id="age" name="ageRange">
+			<option value="greaterThan18AndLessThan25">18-25</option>
+			<option value="greaterThan25AndLessThan65">25-65</option>
+		</select>
+
+		<br>
+
+		<!-- Radio -->
+		<input type="radio" name="gender" id="male" value="male">
+		<label for="male">Male</label>
+
+		<input type="radio" name="gender" id="female" value="female">
+
+		<label for="female">Female</label>
+
+		<br>
+
+		<!-- Checkbox -->
+		<input type="checkbox" id="SSC" name="SSC" value="SSC">
+		<label for="SSC">SSC</label>
+		<br>
+		<input type="checkbox" id="HSC" name="HSC" value="HSC">
+		<label for="HSC">HSC</label>
+
+		<br>
+
+		<!-- Password -->
+		<!-- <input type="password"> -->
+
+		<!-- Input submit -->
+		<input type="submit" value="Submit">
+
+		<!-- Button submit -->
+		<!-- <button type="submit">Submit</button> -->
+
+	</form>
+
+
+		<a href="https://www.w3schools.com/html/html_form_input_types.asp" target="_blank">For more input type click me</a>
+
+</body>
+</html>
