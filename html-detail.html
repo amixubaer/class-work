@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		First Page
+	</title>
+	<style>
+		.c1 {
+			color: yellow;			
+		}
+
+		#i1 {
+			color: grey;
+		}
+
+		table, th, td {
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<!-- headings -->
+	<h1>Heading 1</h1>
+	<h2>Heading 2</h2>
+	<h3>Heading 3</h3>
+	<h4>Heading 4</h4>
+	<h5>Heading 5</h5>
+	<h6>Heading 6</h6>
+
+	<!-- break -->
+	<br>
+
+	<!-- Horizontal Line -->
+	<hr>
+
+	<!-- paragraph -->
+	<p>This is a paragraph 1</p>
+	<p>This is a paragraph 2</p>
+
+	<!-- CSS: [Inline, Internal, External] -->
+
+	<p style="color:red; border: 1px solid blue;">This is a paragraph [CSS] 1</p>
+	<p style="color:red; border: 1px solid blue; font-size: 20px">This is a paragraph [CSS] 2</p>
+
+	<!-- Element Identification using class or id attribute -->
+	<p class="c1">Element identification using class [1]</p>
+	<p class="c1">Element identification using class [2]</p>
+
+	<p id="i1">Element identification using class [3]</p>
+
+	<!-- block element & inline element -->
+
+	<div>
+		Block element 1
+	</div>
+
+	<p>Block element 2</p>
+
+	<span>Inline element 1</span>
+
+	<span id="i2">Inline element 2</span>
+
+	<!-- hyperlinks -->
+
+	<div>
+		<a href="https://www.aiub.edu" target="_blank">Aiub website</a>
+	</div>
+
+	<!-- images -->
+
+	<img src="pikachu.png" alt="pikachu image" style="height: 60px; width: 70px">
+
+	<!-- tables -->
+
+	<table>
+		<tr>
+			<th>Student Id</th>
+			<th>Student Name</th>
+		</tr>
+		<tr>
+			<td>18-23432-1</td>
+			<td>Abc</td>
+		</tr>
+		<tr>
+			<td>19-10432-1</td>
+			<td>Def</td>
+		</tr>
+		<tr>
+			<td>18-10232-2</td>
+			<td>Xyz</td>
+		</tr>
+	</table>
+
+	<!-- Lists -->
+
+	<ul>
+		<li>Java</li>
+		<li>C#</li>
+		<li>Web Tech</li>
+	</ul>
+
+	<ol>
+		<li>Java</li>
+		<li>C#</li>
+		<li>Web Tech</li>
+	</ol>
+
+	<!-- Description Lists -->
+
+	<dl>
+		<dt>Java</dt>
+		<dd>Has prerequisite of C++</dd>
+		<dt>C#</dt>
+		<dd>Has prerequisite of Java</dd>
+	</dl>
+
+	<!-- javascript -->
+	<script>
+		var element = document.getElementById("i2");
+		element.style.color = "red";
+	</script>
+
+</body>
+</html>
