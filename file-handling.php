@@ -134,5 +134,34 @@
 		
 		 </form>
 
+		 <?php 
+
+$File = "Users.txt"; 
+
+$Handle = fopen($File, 'a');
+
+
+
+fwrite($Handle, $firstName); 
+fwrite($Handle, ',');
+fwrite($Handle, $lastName); 
+fwrite($Handle, ',');
+fwrite($Handle, $gender); 
+fwrite($Handle, ',');
+fwrite($Handle, $email); 
+fwrite($Handle, ',');
+fwrite($Handle, $uname); 
+fwrite($Handle, ',');
+fwrite($Handle, $password); 
+fwrite($Handle, ',');
+fwrite($Handle, $recoveryemail); 
+fwrite($Handle, "\n");
+
+print "Submited!"; 
+
+fclose($Handle); 
+
+?>
+
 </body>
 </html>
