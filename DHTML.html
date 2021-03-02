@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DHTML Example</title>
+</head>
+<body>
+	<h1 id="t1">HTML Example</h1>
+	<button onclick="updateText()">Click me to update text</button>
+	<script>
+		function updateText() {
+			var text = document.getElementById('t1');
+			text.innerHTML = "DHTML Example";
+			text.style.color = "red";
+		}
+	</script>
+</body>
+</html>
