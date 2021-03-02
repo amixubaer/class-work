@@ -136,9 +136,11 @@
 
 		 <?php 
 
-$File = "Users.txt"; 
+if($firstName != "" && $lastName != "" && $gender != "" && $email != "" && $userName != "" && $password != "" && $rEmail != "")
+{
+	/*$File = "Users.txt"; 
 
-$Handle = fopen($File, 'a');
+ 	$Handle = fopen($File, 'a');
 
 
 
@@ -159,7 +161,35 @@ fwrite($Handle, "\n");
 
 print "Submited!"; 
 
-fclose($Handle); 
+fclose($Handle); */
+$arr1 = array('firstName' => $firstName, 'lastName' => $lastName, 'gender' => $gender, 'email' => $email, 'password' => $password, 'rEmail' => $rEmail);
+    		$json_encoded_text =  json_encode($arr1); 
+
+    		$file1 = fopen("shatin.txt", "w");
+		    fwrite($file1, $json_encoded_text);
+
+		    fclose($file1);
+
+		}
+
+		$file2 = fopen("Users.txt", "r");
+        $read = fread($file2, filesize("Users.txt"));
+        fclose($file2);
+
+		$json_decoded_text = json_decode($read, true);
+
+        echo $json_decoded_text['firstName'];
+        echo "<br>";
+        echo $json_decoded_text['lastName'];
+        echo "<br>";
+        echo $json_decoded_text['gender'];
+        echo "<br>";
+        echo $json_decoded_text['email'];
+        echo "<br>";
+        echo $json_decoded_text['password'];
+        echo "<br>";
+        echo $json_decoded_text['rEmail'];
+        echo "<br>";
 
 ?>
 
