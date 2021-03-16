@@ -1,2 +1,1 @@
-ABU,JUBAER,male,18-38784-3@student.aiub.edu,Jubi,1234,abujubaer90@gmail.com
-Rasel,Mia,male,18-32345-3@student.aiub.edu,Rasel,0000,rasel@gmail.com
+{"firstName":"Selim","lastName":"Sheikh","gender":"male","email":"selim@yahoo.com","userName":"Selim","password":"1111","rEmail":"selimsheikh@gmail.com"}
