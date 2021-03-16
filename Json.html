@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Json</title>
+</head>
+<body>
+
+	<h1>Json</h1>
+
+	<form action="json.php" method="post">
+		<label for="studentName">Student Name:</label>
+		<input type="text" name="studentName" id="studentName">
+
+		<br>
+		<br>
+
+		<input type="radio" name="gender" id="male" value="male">
+		<label for="male">Male</label>		
+		<input type="radio" name="gender" id="female" value="female">
+		<label for="female">Female</label>
+		<input type="radio" name="gender" id="other" value="other">
+		<label for="other">Other</label>
+
+		<br>
+		<br>
+
+		<label for="courses">Select Courses:</label>
+		<select name="courses[]" id="courses" multiple>
+			<option value="cpp">C++</option>
+			<option value="java">Java</option>
+			<option value="csharp">C#</option>
+			<option value="wt">Web Technology</option>
+		</select>
+
+		<br>
+		<br>
+
+		<input type="submit" name="submit" value="Submit">
+	</form>
+
+</body>
+</html>
